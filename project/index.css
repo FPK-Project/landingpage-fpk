@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.pembungkus {
+    background-color: rgb(2, 43, 104);
+    padding: 1px;
+    height: 780px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.pembungkus1 {
+    display: flex;
+    padding-left: 20px;
+}
+
+.konten1 {
+    width: 800px;
+}
+
+.text1 {
+    display: flex;
+}
+
+.p-1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 19px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.p-2 {
+    font-size: 30px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.text2 {
+    width: 900px;
+}
+
+.MS {
+    display: flex;
+}
+
+.h1-2-1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.h1-1 {
+    color: #fff;
+    font-size: 50px;
+    height: 10px;
+}
+
+.h1-2 {
+    color: #021af5;
+    font-size: 50px;
+    padding-left: 18px;
+}
+
+.bungkuspertama {
+    padding-bottom: 20px;
+}
+
+.bungkuskedua {
+    padding-bottom: 20px;
+}
+
+.pertama {
+    background-color: #fff;
+    height: 100px;
+    width: 600px;
+}
+
+.kedua {
+    background-color: #fff;
+    height: 100px;
+    width: 600px;
+}
+
+.ketiga {
+    background-color: #fff;
+    height: 100px;
+    width: 600px;
+}
+
+.p-3 {
+    color: #fff;
+    width: 800px;
+}
+
+.p-4 {
+    color: #fff;
+}
+
+.text4 {
+    display: flex;
+}
+
+.bawah1 {
+
+}
+
+.bawah2 {
+    padding-left: 40px;
+}

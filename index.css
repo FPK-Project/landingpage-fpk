@@ -1,0 +1,20 @@
+@media screen and (min-width: 1280px) {
+  .hero-heading {
+    position: relative;
+  }
+
+  .hero-heading::before {
+    display: block;
+    position: absolute;
+    content: url("assets/img/hero-decor-1.svg");
+    top: -56px;
+    left: -28px;
+  }
+  .hero-heading::after {
+    display: block;
+    position: absolute;
+    content: url("assets/img/hero-decor-2.svg");
+    bottom: -28px;
+    right: 0;
+  }
+}

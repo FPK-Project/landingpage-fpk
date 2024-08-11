@@ -17,4 +17,27 @@
     bottom: -28px;
     right: 0;
   }
+
+  .programs-heading {
+    position: relative;
+  }
+
+  .programs-heading::before {
+    position: absolute;
+    display: block;
+    content: url("assets/img/programs-decor-1.svg");
+    right: 38px;
+    top: -22px;
+  }
+
+  section#company {
+    position: relative;
+  }
+
+  section#company::after {
+    position: absolute;
+    display: block;
+    content: url("assets/img/programs-decor-2.svg");
+    left: 64px;
+  }
 }

@@ -40,4 +40,28 @@
     content: url("assets/img/programs-decor-2.svg");
     left: 64px;
   }
+
+  .offers-heading {
+    position: relative;
+  }
+
+  .offers-heading::before {
+    position: absolute;
+    display: block;
+    content: url("assets/img/offers-decor-1.svg");
+    top: -32px;
+    left: 128px;
+  }
+
+  section#offers .container .text-wrapper {
+    position: relative;
+  }
+
+  section#offers .container .text-wrapper::after {
+    position: absolute;
+    display: block;
+    content: url("assets/img/offers-decor-2.svg");
+    top: 50px;
+    right: 84px;
+  }
 }

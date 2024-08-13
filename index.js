@@ -7,20 +7,46 @@ hamburgerToggle.addEventListener("click", () => {
 });
 let slidesPerView = 1;
 
-function setSlidesPerViewOnOfferSection(width) {
-  slidesPerView = width < 1024 ? 1 : 2;
-  return slidesPerView;
-}
-
 // Swiper
-const swiper = new Swiper(".swiper", {
+
+const swiperOffer = new Swiper(".swiper--offers", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
   autoplay: {
     delay: 2000,
   },
-  slidesPerView: setSlidesPerViewOnOfferSection(window.innerWidth),
+  slidesPerView: 1,
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+    },
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
+const swiperMentor = new Swiper(".swiper--mentors", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },
 
   // If we need pagination
   pagination: {

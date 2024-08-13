@@ -44,9 +44,6 @@ const swiperMentor = new Swiper(".swiper--mentors", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
-  autoplay: {
-    delay: 2000,
-  },
 
   // If we need pagination
   pagination: {

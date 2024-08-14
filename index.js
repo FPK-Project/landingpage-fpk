@@ -44,6 +44,9 @@ const swiperMentor = new Swiper(".swiper--mentors", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
+  autoplay: {
+    delay: 3000,
+  },
 
   // If we need pagination
   pagination: {
@@ -52,12 +55,9 @@ const swiperMentor = new Swiper(".swiper--mentors", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    prevEl: ".swiper--mentors .swiper-navigation-prev",
+    nextEl: ".swiper--mentors .swiper-navigation-next",
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
 });

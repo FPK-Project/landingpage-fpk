@@ -61,3 +61,25 @@ const swiperMentor = new Swiper(".swiper--mentors", {
 
   // And if we need scrollbar
 });
+
+const swiperEvents = new Swiper(".swiper--events", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  // autoplay: {
+  //   delay: 3000,
+  // },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    prevEl: ".swiper--events #swiper--events__navigator--prev",
+    nextEl: ".swiper--events #swiper--events__navigator--next",
+  },
+
+  // And if we need scrollbar
+});

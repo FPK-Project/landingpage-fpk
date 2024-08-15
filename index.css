@@ -20,6 +20,26 @@
   background-color: #fff;
 }
 
+section#events .card__event {
+  position: relative;
+}
+
+section#events .card__event::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000025;
+  z-index: 5;
+}
+
+section#events .card__event:hover:after {
+  background-image: linear-gradient(to bottom, #ff7e3e50, #73381b80);
+}
+
 @media screen and (min-width: 767px) {
   section#mentors .mentor__description {
     width: 448px !important;

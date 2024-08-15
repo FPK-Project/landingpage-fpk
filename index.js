@@ -66,9 +66,13 @@ const swiperEvents = new Swiper(".swiper--events", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
-  // autoplay: {
-  //   delay: 3000,
-  // },
+
+  slidesPerView: 1,
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+    },
+  },
 
   // If we need pagination
   pagination: {

@@ -87,3 +87,29 @@ const swiperEvents = new Swiper(".swiper--events", {
 
   // And if we need scrollbar
 });
+
+const swiperProjects = new Swiper(".swiper--projects", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  slidesPerView: 1,
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    prevEl: ".swiper--projects #swiper--projects__navigator--prev",
+    nextEl: ".swiper--projects #swiper--projects__navigator--next",
+  },
+
+  // And if we need scrollbar
+});

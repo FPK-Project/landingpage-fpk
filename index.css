@@ -32,13 +32,31 @@ section#events .card__event::after {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: #00000050; */
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), 30%, #ffffff00);
-
   z-index: 5;
 }
 
 section#events .card__event:hover:after {
+  background-image: linear-gradient(to bottom, #ff7e3e50, #73381b80);
+}
+
+section#projects .card__project {
+  position: relative;
+}
+
+section#projects .card__project::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), 30%, #ffffff00);
+  z-index: 5;
+}
+
+section#projects .card__project:hover:after {
   background-image: linear-gradient(to bottom, #ff7e3e50, #73381b80);
 }
 
@@ -166,5 +184,17 @@ section#events .card__event:hover:after {
     position: absolute;
     top: -20px;
     left: 260px;
+  }
+
+  section#projects .projects-heading {
+    position: relative;
+  }
+
+  section#projects .projects-heading::after {
+    content: url("assets/img/projects-decor-1.svg");
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 230px;
   }
 }

@@ -113,3 +113,33 @@ const swiperProjects = new Swiper(".swiper--projects", {
 
   // And if we need scrollbar
 });
+
+const swiperTestimonials = new Swiper(".swiper--testimonials", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  slidesPerView: 1,
+  autoplay: {
+    delay: 3000,
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+    },
+  },
+  spaceBetween: 32,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    prevEl: ".swiper--projects #swiper--projects__navigator--prev",
+    nextEl: ".swiper--projects #swiper--projects__navigator--next",
+  },
+
+  // And if we need scrollbar
+});

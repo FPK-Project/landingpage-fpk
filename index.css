@@ -60,6 +60,11 @@ section#projects .card__project:hover:after {
   background-image: linear-gradient(to bottom, #ff7e3e50, #73381b80);
 }
 
+section#footer footer {
+  /* background-image: url(assets/img/footer-bg.png); */
+  /* background-size: cover; */
+}
+
 @media screen and (min-width: 767px) {
   section#mentors .mentor__description {
     width: 448px !important;

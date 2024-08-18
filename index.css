@@ -61,8 +61,21 @@ section#projects .card__project:hover:after {
 }
 
 section#footer footer {
-  /* background-image: url(assets/img/footer-bg.png); */
-  /* background-size: cover; */
+  background-image: url(assets/img/footer-bg-2.png);
+  background-size: cover;
+  position: relative;
+}
+
+section#testimonials .card__testimonial {
+  position: relative;
+}
+
+section#testimonials .card__testimonial::before {
+  position: relative;
+  display: block;
+  content: url("assets/img/testimonial-decor-2.svg");
+  top: -16px;
+  left: 32px;
 }
 
 @media screen and (min-width: 767px) {
@@ -233,17 +246,5 @@ section#footer footer {
     content: url("assets/img/testimonial-decor-1.svg");
     top: 90px;
     right: -200px;
-  }
-
-  section#testimonials .card__testimonial {
-    position: relative;
-  }
-
-  section#testimonials .card__testimonial::before {
-    position: relative;
-    display: block;
-    content: url("assets/img/testimonial-decor-2.svg");
-    top: -16px;
-    left: 32px;
   }
 }

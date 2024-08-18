@@ -18,6 +18,26 @@
   @apply -rotate-45 transition;
 }
 
-#links-wrapper.active {
-  @apply translate-y-0;
+@media screen and (max-width: 1023px) {
+  #links-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition:
+      max-height 300ms ease-in-out,
+      padding-top 300ms ease-in-out,
+      padding-bottom 300ms ease-in-out;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  #links-wrapper.active {
+    padding-top: 16px;
+    padding-bottom: 24px;
+    max-height: 420px;
+    transition:
+      max-height 300ms ease-in-out,
+      padding-top 300ms ease-in-out,
+      padding-bottom 300ms ease-in-out;
+    @apply shadow-md;
+  }
 }

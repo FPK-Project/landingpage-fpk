@@ -19,25 +19,18 @@
 }
 
 @media screen and (max-width: 1023px) {
-  #links-wrapper {
-    max-height: 0;
-    overflow: hidden;
+  nav {
+    height: 56px;
     transition:
-      max-height 300ms ease-in-out,
-      padding-top 300ms ease-in-out,
-      padding-bottom 300ms ease-in-out;
-    padding-top: 0px;
-    padding-bottom: 0px;
+      height 300ms ease-in-out,
+      background-color 600ms ease-in-out;
   }
 
-  #links-wrapper.active {
-    padding-top: 16px;
-    padding-bottom: 24px;
-    max-height: 420px;
-    transition:
-      max-height 300ms ease-in-out,
-      padding-top 300ms ease-in-out,
-      padding-bottom 300ms ease-in-out;
-    @apply shadow-md;
+  nav.active {
+    height: calc(320px + 56px + 32px);
+    background-color: white;
+    transition: height 300ms ease-in-out;
+
+    @apply shadow-sm;
   }
 }

@@ -1,0 +1,7 @@
+/* Hero */
+section#hero main {
+  background-image: url("../assets/img/about-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* Hero */

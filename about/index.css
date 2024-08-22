@@ -5,3 +5,11 @@ section#hero main {
   background-position: center;
 }
 /* Hero */
+
+/* Footer */
+section#footer footer {
+  background-image: url("../assets/img/footer-bg-2.png");
+  background-size: cover;
+  position: relative;
+}
+/* Footer */

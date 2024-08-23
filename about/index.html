@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../lib/tailwindcss/style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body class="font-body">
+  <body class="relative left-0 top-0 overflow-x-hidden font-body">
     <!-- Section Hero -->
     <section id="hero">
       <!-- Navbar -->
@@ -89,7 +89,7 @@
 
     <!-- Section Benefit -->
     <section id="benefit">
-      <div class="container mx-auto mt-9 px-4 py-16 md:px-6 xl:px-16">
+      <div class="container relative mx-auto mt-9 px-4 py-16 md:px-6 xl:px-16">
         <h2 class="text-center text-2xl font-semibold">Benefit <br /><span class="text-[#F49D03]">Bergabung Dengan FPK?</span></h2>
 
         <div class="mt-9 flex flex-col gap-y-8 md:flex-row md:flex-wrap md:justify-center md:gap-12 xl:gap-24">
@@ -121,13 +121,26 @@
             <p class="mt-1 text-center text-[#000000]/70">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea eligendi deleniti debitis molestiae sit, animi eveniet blanditiis totam dolores fugiat aliquid, voluptate cumque harum. Iusto.</p>
           </div>
         </div>
+
+        <!-- Decoration -->
+        <svg class="absolute top-0 hidden w-24 xl:block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 119 65">
+          <path fill="#FEAAAA" d="M45 32.5 11.25 60.646V4.354L45 32.5Z" />
+          <path fill="#E1A91F" d="M79 32.5 45.25 60.646V4.354L79 32.5Z" />
+          <path fill="#E9C638" d="M113 32.5 79.25 60.646V4.354L113 32.5Z" />
+        </svg>
+        <svg class="absolute right-16 top-16 hidden w-24 xl:block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 191 175">
+          <circle cx="72.7" cy="68.279" r="60.227" fill="#F49D03" fill-opacity=".8" transform="rotate(98.286 72.7 68.279)" />
+          <circle cx="117.249" cy="105.46" r="59.036" stroke="#E9C638" stroke-width="3" transform="rotate(98.286 117.249 105.46)" />
+        </svg>
+
+        <!-- _Decoration -->
       </div>
     </section>
     <!-- _Section Benefit  -->
 
     <!-- Section Mentor -->
     <section id="mentor" class="min-h-24 bg-[#E9B838]/10">
-      <div class="container mx-auto mt-9 px-4 pb-16 pt-16 md:px-8 xl:px-16 xl:pb-48">
+      <div class="container relative mx-auto mt-9 px-4 pb-16 pt-16 md:px-8 xl:px-16 xl:pb-48">
         <h2 class="text-center text-2xl font-semibold text-[#F49D03]">Mentor Terbaik FPK</h2>
         <div class="wrapper mt-[108px] flex flex-col items-center gap-y-28 md:mt-[138px] md:flex-row md:flex-wrap md:justify-center md:gap-x-8 md:gap-y-40 lg:gap-x-14">
           <div class="card w-[252px] shadow md:w-[300px]">
@@ -161,12 +174,16 @@
             </div>
           </div>
         </div>
+        <!-- Decoration -->
+        <div class="absolute bottom-80 left-0 hidden h-80 w-80 -translate-x-1/2 rounded-full bg-[#E9C638]/50 blur-[50px] xl:block"></div>
+
+        <!-- _Decoration -->
       </div>
     </section>
     <!-- _Section Mentor -->
 
     <!-- Section Team -->
-    <section id="team">
+    <section id="team" class="relative">
       <div class="container mx-auto px-4 py-16 md:px-8 xl:px-16">
         <h2 class="text-center text-2xl font-semibold text-[#F49D03]">Tim Kami</h2>
         <picture>
@@ -176,9 +193,20 @@
 
         <picture>
           <source media="(min-width:1024px)" srcset="../assets/img/about-team-structure-desktop-2.svg" />
-          <img class="mx-auto mt-16 w-full lg:max-w-xl xl:max-w-3xl" src="../assets/img/about-team-structure-mobile-2.svg" alt="" />
+          <img class="mx-auto mt-32 w-full lg:max-w-xl xl:max-w-3xl" src="../assets/img/about-team-structure-mobile-2.svg" alt="" />
         </picture>
       </div>
+      <!-- Decoration -->
+      <svg class="absolute top-1/2 hidden w-[500px] -translate-y-[calc(50%+150px)] xl:block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 735 455">
+        <path stroke="url(#teamDecor1)" stroke-width="5" d="M-120 3C11.171 37.71-113.072 182.105-7.303 295.955c105.768 113.85 252.181-12.033 417.531 103.206 165.35 115.238 228.627 0 323.772 39.801" />
+        <defs>
+          <linearGradient id="teamDecor1" x1="398.5" x2="621.285" y1="239.5" y2="478.349" gradientUnits="userSpaceOnUse">
+            <stop offset=".316" stop-color="#E9C638" />
+            <stop offset=".73" stop-color="#fff" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <!-- _Decoration -->
     </section>
     <!-- _Section Team -->
 
@@ -293,5 +321,10 @@
       </footer>
     </section>
     <!-- _Section Footer -->
+
+    <!-- Decoration -->
+    <div class="absolute right-0 top-[400px] hidden h-80 w-80 translate-x-1/2 rounded-full bg-[#E9C638]/50 blur-[50px] xl:block"></div>
+
+    <!-- _Decoration -->
   </body>
 </html>

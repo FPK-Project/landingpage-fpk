@@ -17,26 +17,11 @@ const swiperOffer = new Swiper(".swiper--offers", {
     delay: 2000,
   },
   slidesPerView: 1,
+  spaceBetween: 16,
   breakpoints: {
     1024: {
       slidesPerView: 2,
     },
-  },
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
   },
 });
 

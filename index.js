@@ -92,11 +92,16 @@ const swiperProjects = new Swiper(".swiper--projects", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
+  autoplay: {
+    delay: 3000,
+  },
 
   slidesPerView: 1,
+  spaceBetween: 16,
   breakpoints: {
-    1024: {
-      slidesPerView: 3,
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 32,
     },
   },
 

@@ -16,12 +16,17 @@ const swiperOffer = new Swiper(".swiper--offers", {
   autoplay: {
     delay: 2000,
   },
+
   slidesPerView: 1,
   spaceBetween: 16,
   breakpoints: {
     1024: {
       slidesPerView: 2,
     },
+  },
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination-offers",
   },
 });
 

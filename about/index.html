@@ -22,7 +22,7 @@
     <!-- Section Hero -->
     <section id="hero">
       <!-- Navbar -->
-      <nav class="fixed left-0 top-0 z-50 w-full overflow-hidden shadow-sm backdrop-blur-md">
+      <nav class="fixed left-0 top-0 z-[9999] w-full overflow-hidden shadow-sm backdrop-blur-md">
         <div class="container mx-auto flex h-14 items-center justify-between px-4 md:px-8 lg:h-16 xl:px-16">
           <a class="flex items-center gap-2" href="">
             <svg xmlns="http://www.w3.org/2000/svg" width="44" height="41" fill="none" viewBox="0 0 44 41">
@@ -40,14 +40,16 @@
           </div>
 
           <ul id="links-wrapper" class="absolute left-0 top-14 box-border flex w-full flex-col gap-y-4 px-4 py-4 transition-transform duration-200 lg:static lg:w-max lg:translate-y-0 lg:flex-row lg:items-center lg:gap-8 lg:rounded-none lg:bg-transparent lg:p-0">
-            <li><a href="../" class="block text-lg font-medium tracking-wide text-black/60 transition duration-100 hover:text-black lg:text-base">Home</a></li>
-            <li><a href="/about/" class="block text-lg font-bold tracking-wide text-[#F49D03] lg:text-base">About Us</a></li>
-            <li><a href="/services/" class="block text-lg font-medium tracking-wide text-black/60 transition duration-100 hover:text-black lg:text-base">Services</a></li>
-            <li><a href="/projects/" class="block text-lg font-medium tracking-wide text-black/60 transition duration-100 hover:text-black lg:text-base">Project</a></li>
+            <li><a href="/" class="block text-lg font-medium tracking-wide text-black/60 transition duration-100 hover:text-black lg:text-base">Home</a></li>
+            <li><a href="/about/" class="block text-lg font-bold tracking-wide text-[#F49D03] transition duration-100 lg:text-base">About Us</a></li>
+
+            <li><a href="/project/" class="block text-lg font-medium tracking-wide text-black/60 transition duration-100 hover:text-black lg:text-base">Project</a></li>
             <li><a href="/contact/" class="block text-lg font-medium tracking-wide text-black/60 transition duration-100 hover:text-black lg:text-base">Contact</a></li>
             <div class="flex flex-col gap-2 lg:flex-row lg:items-center">
-              <button class="rounded-lg border-2 border-[#FF7E3E] px-6 py-2.5 font-bold text-[#FF7E3E] shadow-md transition-colors duration-300 hover:border-transparent hover:bg-[#F49D03] hover:text-white lg:border-none lg:px-10 lg:shadow-none lg:hover:bg-transparent lg:hover:text-[#FF7E3E]">Sign In</button>
-              <button class="rounded-lg bg-gradient-to-r from-[#F49D03] to-[#FF7E3E] px-6 py-2.5 font-bold text-white shadow-md lg:px-10">Login</button>
+              <button class="rounded-lg border-2 border-[#FF7E3E] px-6 py-2.5 font-bold text-[#FF7E3E] shadow-md transition-colors duration-300 hover:border-transparent hover:bg-[#FF7E3E] hover:text-white lg:border-none lg:px-10 lg:shadow-none lg:hover:bg-transparent lg:hover:text-[#FF7E3E]" onclick="window.location.href='/register'">Sign In</button>
+
+              <!-- <button class="rounded-lg bg-gradient-to-r from-[#F49D03] to-[#FF7E3E] px-6 py-2.5 font-bold text-white shadow-md lg:px-10">Login</button> -->
+              <button class="relative flex h-[48px] w-full items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-[#F49D03] to-[#FF7E3E] font-bold text-white shadow-md transition-all duration-300 after:absolute after:inset-0 after:block after:bg-[#FF7E3E] after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100 active:scale-95 lg:mt-0 lg:h-11 lg:w-[124px]" onclick="window.location.href='/login'"><span class="absolute z-10 block">Login</span></button>
             </div>
           </ul>
         </div>
@@ -212,7 +214,7 @@
 
     <!-- Section Footer -->
     <section id="footer">
-      <footer class="mt-7">
+      <footer class="">
         <div class="container mx-auto px-4 pb-8 pt-16 md:px-8">
           <h2 class="text-center text-2xl font-semibold text-white">
             Apakah Kamu Juga Akan Jadi Bagian <br class="hidden md:block" />
@@ -221,8 +223,8 @@
           <p class="mt-7 text-center text-white md:mx-auto md:max-w-md">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
           <div class="mt-6 flex justify-center gap-3">
-            <button class="rounded-md bg-white px-4 py-2.5 font-medium text-[#FF7E3E]">Contact Us</button>
-            <button class="rounded-md bg-white px-4 py-2.5 font-medium text-[#FF7E3E]">Gabung Sekarang</button>
+            <button class="rounded-md bg-white px-4 py-2.5 font-medium text-[#FF7E3E]" onclick="window.location.href='/contact'">Contact Us</button>
+            <button class="rounded-md bg-white px-4 py-2.5 font-medium text-[#FF7E3E]" onclick="window.location.href='/join'">Gabung Sekarang</button>
           </div>
 
           <div class="mt-12 flex flex-wrap justify-between gap-y-8 text-white">
@@ -244,7 +246,7 @@
                 <div class="max-w-sm">
                   <h5 class="font-semibold">FPK HQ</h5>
                   <p>Jl. Veteran No.4A, Tangsi, Kec. Binjai Kota, Kota Binjai, Sumatera Utara 20714</p>
-                  <a class="underline underline-offset-2" href="https://maps.app.goo.gl/7hiHAo64X2Epgmhv7">Lihat di Google Maps</a>
+                  <a class="underline underline-offset-2" target="_blank" href="https://maps.app.goo.gl/7hiHAo64X2Epgmhv7">Lihat di Google Maps</a>
                 </div>
               </div>
               <div class="flex items-center gap-4">
@@ -257,7 +259,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                   <path fill="#fff" d="m0 20 1.413-5.136A9.853 9.853 0 0 1 .083 9.91C.087 4.446 4.554 0 10.043 0a9.918 9.918 0 0 1 7.044 2.907A9.83 9.83 0 0 1 20 9.918c-.003 5.465-4.47 9.91-9.958 9.91a9.995 9.995 0 0 1-4.763-1.206L0 20Zm5.524-3.172c1.403.829 2.743 1.325 4.515 1.326 4.561 0 8.277-3.695 8.28-8.237.001-4.552-3.697-8.242-8.274-8.244-4.565 0-8.278 3.695-8.28 8.237 0 1.854.545 3.242 1.462 4.695l-.836 3.04 3.133-.817Zm9.534-4.554c-.062-.103-.228-.165-.477-.289-.249-.124-1.472-.723-1.7-.806-.228-.082-.394-.124-.56.124-.167.248-.644.806-.789.971-.145.165-.29.186-.539.062-.249-.124-1.05-.385-2.001-1.23-.74-.656-1.24-1.467-1.384-1.715-.145-.248-.015-.382.109-.505.112-.111.248-.29.373-.434.127-.144.168-.247.251-.413.083-.165.042-.31-.02-.434-.063-.123-.56-1.343-.768-1.838-.202-.483-.407-.418-.56-.425l-.477-.009a.914.914 0 0 0-.663.31c-.228.249-.871.847-.871 2.066 0 1.22.892 2.397 1.016 2.562.124.165 1.754 2.666 4.25 3.739.594.255 1.057.408 1.418.522.596.188 1.139.161 1.568.098.478-.07 1.472-.6 1.68-1.178.207-.579.207-1.075.144-1.178Z" />
                 </svg>
-                <a href="https://wa.me/6282233211131?textHalo%20FPK">+6282233211131</a>
+                <a href="https://wa.me/6282233211131?text=Halo%20FPK" target="_blank">+6282233211131</a>
               </div>
             </div>
             <div class="">

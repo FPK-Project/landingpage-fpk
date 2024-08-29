@@ -8,7 +8,6 @@ hamburgerToggle.addEventListener("click", () => {
 let slidesPerView = 1;
 
 // Swiper
-
 const swiperOffer = new Swiper(".swiper--offers", {
   // Optional parameters
   direction: "horizontal",
@@ -48,8 +47,6 @@ const swiperMentor = new Swiper(".swiper--mentors", {
     prevEl: ".swiper--mentors .swiper-navigation-prev",
     nextEl: ".swiper--mentors .swiper-navigation-next",
   },
-
-  // And if we need scrollbar
 });
 
 const swiperEvents = new Swiper(".swiper--events", {
@@ -77,8 +74,6 @@ const swiperEvents = new Swiper(".swiper--events", {
     prevEl: ".swiper--events #swiper--events__navigator--prev",
     nextEl: ".swiper--events #swiper--events__navigator--next",
   },
-
-  // And if we need scrollbar
 });
 
 const swiperProjects = new Swiper(".swiper--projects", {
@@ -138,6 +133,4 @@ const swiperTestimonials = new Swiper(".swiper--testimonials", {
     prevEl: ".swiper--projects #swiper--projects__navigator--prev",
     nextEl: ".swiper--projects #swiper--projects__navigator--next",
   },
-
-  // And if we need scrollbar
 });

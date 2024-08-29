@@ -139,7 +139,7 @@ section#testimonials .card__testimonial {
 section#testimonials .card__testimonial::before {
   position: relative;
   display: block;
-  content: url("assets/img/testimonial-decor-2.svg");
+  content: url("assets/img/svg/testimonial-decor-2.svg");
   top: -16px;
   left: 32px;
 }
@@ -147,7 +147,7 @@ section#testimonials .card__testimonial::before {
 
 /* Footer */
 section#footer footer {
-  background-image: url(assets/img/footer-bg-2.png);
+  background-image: url(assets/img/footer-bg.png);
   background-size: cover;
   position: relative;
 }
@@ -212,14 +212,14 @@ section#footer footer {
   section#hero .hero-heading::before {
     display: block;
     position: absolute;
-    content: url("assets/img/hero-decor-1.svg");
+    content: url("assets/img/svg/hero-decor-1.svg");
     top: -56px;
     left: -28px;
   }
   section#hero .hero-heading::after {
     display: block;
     position: absolute;
-    content: url("assets/img/hero-decor-2.svg");
+    content: url("assets/img/svg/hero-decor-2.svg");
     bottom: -28px;
     right: 0;
   }
@@ -232,7 +232,7 @@ section#footer footer {
   section#company::after {
     position: absolute;
     display: block;
-    content: url("assets/img/programs-decor-2.svg");
+    content: url("assets/img/svg/programs-decor-2.svg");
     left: 64px;
   }
   /* 1280px: _Company */
@@ -244,7 +244,7 @@ section#footer footer {
   section#programs .programs-heading::before {
     position: absolute;
     display: block;
-    content: url("assets/img/programs-decor-1.svg");
+    content: url("assets/img/svg/programs-decor-1.svg");
     right: 38px;
     top: -22px;
   }
@@ -257,7 +257,7 @@ section#footer footer {
   section#offers .offers-heading::before {
     position: absolute;
     display: block;
-    content: url("assets/img/offers-decor-1.svg");
+    content: url("assets/img/svg/offers-decor-1.svg");
     top: -32px;
     left: 128px;
   }
@@ -269,7 +269,7 @@ section#footer footer {
   section#offers .container .text-wrapper::after {
     position: absolute;
     display: block;
-    content: url("assets/img/offers-decor-2.svg");
+    content: url("assets/img/svg/offers-decor-2.svg");
     top: 50px;
     right: 84px;
   }
@@ -282,7 +282,7 @@ section#footer footer {
   section#mentors .wrapper::before {
     position: absolute;
     display: block;
-    content: url("assets/img/mentor-decor-2-cropped.svg");
+    content: url("assets/img/svg/mentor-decor-2-cropped.svg");
     left: 0;
     bottom: -10px;
     z-index: 999;
@@ -290,7 +290,7 @@ section#footer footer {
   section#mentors .wrapper::after {
     position: absolute;
     display: block;
-    content: url("assets/img/mentor-decor-1.svg");
+    content: url("assets/img/svg/mentor-decor-1.svg");
     right: 38px;
     top: 0;
     z-index: 9999;
@@ -302,7 +302,7 @@ section#footer footer {
   }
 
   section#events .events-heading::after {
-    content: url("assets/img/event-decor-1.svg");
+    content: url("assets/img/svg/event-decor-1.svg");
     display: block;
     position: absolute;
     top: -20px;
@@ -315,7 +315,7 @@ section#footer footer {
   }
 
   section#projects .projects-heading::after {
-    content: url("assets/img/projects-decor-1.svg");
+    content: url("assets/img/svg/projects-decor-1.svg");
     display: block;
     position: absolute;
     top: -20px;
@@ -329,7 +329,7 @@ section#footer footer {
   section#projects .container::after {
     position: absolute;
     display: block;
-    content: url("assets/img/projects-decor-2.svg");
+    content: url("assets/img/svg/projects-decor-2.svg");
     top: 50px;
     right: 64px;
   }
@@ -342,7 +342,7 @@ section#footer footer {
   section#testimonials .text-wrapper::before {
     position: absolute;
     display: block;
-    content: url("assets/img/testimonial-decor-1.svg");
+    content: url("assets/img/svg/testimonial-decor-1.svg");
     top: 90px;
     left: -200px;
   }
@@ -350,7 +350,7 @@ section#footer footer {
   section#testimonials .text-wrapper::after {
     position: absolute;
     display: block;
-    content: url("assets/img/testimonial-decor-1.svg");
+    content: url("assets/img/svg/testimonial-decor-1.svg");
     top: 90px;
     right: -200px;
   }

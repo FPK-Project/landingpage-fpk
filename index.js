@@ -56,6 +56,9 @@ const swiperEvents = new Swiper(".swiper--events", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
+  autoplay: {
+    delay: 3000,
+  },
 
   slidesPerView: 1,
   breakpoints: {

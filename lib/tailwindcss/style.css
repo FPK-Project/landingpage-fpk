@@ -1310,8 +1310,20 @@ video {
   padding-top: 4rem;
 }
 
+.pt-7 {
+  padding-top: 1.75rem;
+}
+
 .pt-9 {
   padding-top: 2.25rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .text-center {
@@ -1660,11 +1672,6 @@ video {
 
 .hover\:border-transparent:hover {
   border-color: transparent;
-}
-
-.hover\:bg-\[\#F49D03\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 157 3 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#FF7E3E\]:hover {

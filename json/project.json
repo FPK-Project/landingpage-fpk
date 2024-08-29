@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://antijoki.vercel.app/",
+    "type": "Front End Developer",
+    "img_path": "assets/img/projects/project-1.png",
+    "title": "Workshop Front End Developer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
+  },
+  {
+    "url": "https://online-learning-landing-page-abdi.vercel.app/",
+    "type": "Front End Developer",
+    "img_path": "assets/img/projects/project-2.png",
+    "title": "Workshop Front End Developer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
+  },
+  {
+    "url": "https://jadoo-travel-agency-abdi.vercel.app/",
+    "type": "Front End Developer",
+    "img_path": "assets/img/projects/project-3.png",
+    "title": "Workshop Front End Developer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
+  },
+  {
+    "url": "https://oatmovie.vercel.app/",
+    "type": "Front End Developer",
+    "img_path": "assets/img/projects/project-4.png",
+    "title": "Workshop Front End Developer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
+  },
+  {
+    "url": "https://design-agency-landing-page.vercel.app/",
+    "type": "Front End Developer",
+    "img_path": "assets/img/projects/project-5.png",
+    "title": "Workshop Front End Developer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
+  }
+]

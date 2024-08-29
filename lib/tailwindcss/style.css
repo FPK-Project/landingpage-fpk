@@ -1298,6 +1298,10 @@ video {
   padding-bottom: 4rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -1316,14 +1320,6 @@ video {
 
 .pt-9 {
   padding-top: 2.25rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
 }
 
 .text-center {
@@ -2147,11 +2143,6 @@ video {
   .xl\:py-2\.5 {
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
-  }
-
-  .xl\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .xl\:pb-48 {

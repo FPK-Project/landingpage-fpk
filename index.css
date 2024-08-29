@@ -1,25 +1,13 @@
-#mentors .wrapper {
-  background-image: linear-gradient(170deg, #ff7e3e 17%, #f49d03 100%);
-}
+/* Hero */
+/* _Hero */
 
-#mentors .swiper-pagination {
-  position: static !important;
-  width: max-content;
-  height: auto;
-  display: flex;
-  align-items: center;
-}
+/* Company */
+/* _Company */
 
-#mentors .swiper-pagination .swiper-pagination-bullet {
-  background-color: #d9d9d9;
-  width: 16px;
-  height: 16px;
-}
+/* Programs */
+/* _Programs */
 
-#mentors .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #fff;
-}
-
+/* Offers */
 section#offers .swiper-pagination .swiper-pagination-bullet {
   background-color: #d9d9d9;
   opacity: 1;
@@ -30,7 +18,33 @@ section#offers .swiper-pagination .swiper-pagination-bullet {
 section#offers .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ff7e3e;
 }
+/* _Offers */
 
+/* Mentors */
+section#mentors .wrapper {
+  background-image: linear-gradient(170deg, #ff7e3e 17%, #f49d03 100%);
+}
+
+section#mentors .swiper-pagination {
+  position: static !important;
+  width: max-content;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+section#mentors .swiper-pagination .swiper-pagination-bullet {
+  background-color: #d9d9d9;
+  width: 16px;
+  height: 16px;
+}
+
+section#mentors .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+/* _Mentors */
+
+/* Events */
 section#events .swiper-pagination {
   position: relative;
   margin-top: 4px;
@@ -66,7 +80,9 @@ section#events .card__event::after {
 section#events .card__event:hover:after {
   background-image: linear-gradient(to bottom, rgba(255, 126, 62, 0.5), rgba(115, 56, 27, 0.8));
 }
+/* _Events */
 
+/* Projects */
 section#projects .swiper-pagination {
   position: relative;
 }
@@ -97,17 +113,9 @@ section#projects .card__project::after {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), 30%, #ffffff00);
   z-index: 5;
 }
+/* _Projects */
 
-section#projects .card__project:hover:after {
-  /* background-image: linear-gradient(to bottom, #ff7e3e50, #73381b80); */
-}
-
-section#footer footer {
-  background-image: url(assets/img/footer-bg-2.png);
-  background-size: cover;
-  position: relative;
-}
-
+/* Testimonials */
 section#testimonials .swiper-pagination {
   position: relative;
   top: 0;
@@ -135,65 +143,88 @@ section#testimonials .card__testimonial::before {
   top: -16px;
   left: 32px;
 }
+/* _Testimonials */
+
+/* Footer */
+section#footer footer {
+  background-image: url(assets/img/footer-bg-2.png);
+  background-size: cover;
+  position: relative;
+}
+/* _Footer */
 
 @media screen and (min-width: 767px) {
+  /* 768px: Hero */
+  /* 768px: _Hero */
+  /* 768px: Company */
+  /* 768px: _Company */
+  /* 768px: Programs */
+  /* 768px: _Programs */
+  /* 768px: Offers */
+  /* 768px: _Offers */
+  /* 768px: Mentors */
   section#mentors .mentor__description {
     width: 448px !important;
     margin-inline: auto;
   }
+  /* 768px: _Mentors */
+  /* 768px: Events */
+  /* 768px: _Events */
+  /* 768px: Projects */
+  /* 768px: _Projects */
+  /* 768px: Testimonials */
+  /* 768px: _Testimonials */
+  /* 768px: Footer */
+  /* 768px: _Footer */
 }
 
 @media screen and (min-width: 1024px) {
+  /* 1024px: Hero */
+  /* 1024px: _Hero */
+  /* 1024px: Company */
+  /* 1024px: _Company */
+  /* 1024px: Programs */
+  /* 1024px: _Programs */
+  /* 1024px: Offers */
+  /* 1024px: _Offers */
+  /* 1024px: Mentors */
   section#mentors .mentor__social-media {
     background-image: linear-gradient(to bottom, #ff7e3e, #f49d03);
     animation: showMentorsSocials 1000ms forwards ease-in-out;
   }
-}
-
-@keyframes showMentorsSocials {
-  from {
-    transform: translateY(-100px) scale(75%);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0) scale(75%);
-    opacity: 1;
-  }
+  /* 1024px: _Mentors */
+  /* 1024px: Events */
+  /* 1024px: _Events */
+  /* 1024px: Projects */
+  /* 1024px: _Projects */
+  /* 1024px: Testimonials */
+  /* 1024px: _Testimonials */
+  /* 1024px: Footer */
+  /* 1024px: _Footer */
 }
 
 @media screen and (min-width: 1280px) {
-  .hero-heading {
+  /* 1280px: Hero */
+  section#hero .hero-heading {
     position: relative;
   }
 
-  .hero-heading::before {
+  section#hero .hero-heading::before {
     display: block;
     position: absolute;
     content: url("assets/img/hero-decor-1.svg");
     top: -56px;
     left: -28px;
   }
-  .hero-heading::after {
+  section#hero .hero-heading::after {
     display: block;
     position: absolute;
     content: url("assets/img/hero-decor-2.svg");
     bottom: -28px;
     right: 0;
   }
-
-  .programs-heading {
-    position: relative;
-  }
-
-  .programs-heading::before {
-    position: absolute;
-    display: block;
-    content: url("assets/img/programs-decor-1.svg");
-    right: 38px;
-    top: -22px;
-  }
-
+  /* 1280px: _Hero */
+  /* 1280px: Company */
   section#company {
     position: relative;
   }
@@ -204,12 +235,26 @@ section#testimonials .card__testimonial::before {
     content: url("assets/img/programs-decor-2.svg");
     left: 64px;
   }
-
-  .offers-heading {
+  /* 1280px: _Company */
+  /* 1280px: Programs */
+  section#programs .programs-heading {
     position: relative;
   }
 
-  .offers-heading::before {
+  section#programs .programs-heading::before {
+    position: absolute;
+    display: block;
+    content: url("assets/img/programs-decor-1.svg");
+    right: 38px;
+    top: -22px;
+  }
+  /* 1280px: _Programs */
+  /* 1280px: Offers */
+  section#offers .offers-heading {
+    position: relative;
+  }
+
+  section#offers .offers-heading::before {
     position: absolute;
     display: block;
     content: url("assets/img/offers-decor-1.svg");
@@ -228,7 +273,8 @@ section#testimonials .card__testimonial::before {
     top: 50px;
     right: 84px;
   }
-
+  /* 1280px: _Offers */
+  /* 1280px: Mentors */
   section#mentors .wrapper {
     position: relative;
   }
@@ -249,7 +295,8 @@ section#testimonials .card__testimonial::before {
     top: 0;
     z-index: 9999;
   }
-
+  /* 1280px: _Mentors */
+  /* 1280px: Events */
   section#events .events-heading {
     position: relative;
   }
@@ -261,7 +308,8 @@ section#testimonials .card__testimonial::before {
     top: -20px;
     left: 260px;
   }
-
+  /* 1280px: _Events */
+  /* 1280px: Projects */
   section#projects .projects-heading {
     position: relative;
   }
@@ -285,7 +333,8 @@ section#testimonials .card__testimonial::before {
     top: 50px;
     right: 64px;
   }
-
+  /* 1280px: _Projects */
+  /* 1280px: Testimonials */
   section#testimonials .text-wrapper {
     position: relative;
   }
@@ -304,5 +353,20 @@ section#testimonials .card__testimonial::before {
     content: url("assets/img/testimonial-decor-1.svg");
     top: 90px;
     right: -200px;
+  }
+  /* 1280px: _Testimonials */
+  /* 1280px: Footer */
+  /* 1280px: _Footer */
+}
+
+@keyframes showMentorsSocials {
+  from {
+    transform: translateY(-100px) scale(75%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) scale(75%);
+    opacity: 1;
   }
 }

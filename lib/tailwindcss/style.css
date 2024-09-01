@@ -1388,14 +1388,6 @@ video {
   text-transform: uppercase;
 }
 
-.tracking-wide {
-  letter-spacing: 0.025em;
-}
-
-.tracking-tight {
-  letter-spacing: -0.025em;
-}
-
 .text-\[\#000000\]\/70 {
   color: rgb(0 0 0 / 0.7);
 }

@@ -15,17 +15,17 @@ async function renderCardEvents() {
   const eventSwiperWrapper = document.querySelector("section#events .swiper-wrapper");
   const events = await getData("event");
   events.map((event) => {
-    eventSwiperWrapper.innerHTML += `<div class="swiper-slide ">
-<a href="" class="card__event group relative mx-auto block aspect-[2/3] w-[256px] overflow-hidden rounded-lg shadow-xl xl:w-[300px]">
-  <img class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" src="${event.img_path}" alt="" />
+    swiperEvents.appendSlide(`<div class="swiper-slide ">
+  <a href="" class="card__event group relative mx-auto block aspect-[2/3] w-[256px] overflow-hidden rounded-lg shadow-xl xl:w-[300px]">
+    <img class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" src="${event.img_path}" alt="" />
 
-  <div class="absolute bottom-5 left-2.5 z-50 w-[calc(100%-20px)] lg:left-4 lg:w-[calc(100%-32px)]">
-    <p class="max-w-max rounded-lg bg-[#D9D9D990] px-2 py-1 text-xs uppercase text-white">${event.type}</p>
-    <h4 class="mt-4 font-bold text-white">${event.title}</h4>
-    <p class="mt-1 text-sm text-white">${event.description}</p>
-  </div>
-</a>
-</div>`;
+    <div class="absolute bottom-5 left-2.5 z-50 w-[calc(100%-20px)] lg:left-4 lg:w-[calc(100%-32px)]">
+      <p class="max-w-max rounded-lg bg-[#D9D9D990] px-2 py-1 text-xs uppercase text-white">${event.type}</p>
+      <h4 class="mt-4 font-bold text-white">${event.title}</h4>
+      <p class="mt-1 text-sm text-white">${event.description}</p>
+    </div>
+  </a>
+  </div>`);
   });
   swiperEvents.update();
 }
@@ -34,7 +34,7 @@ async function renderCardProjects() {
   const projectSwiperWrapper = document.querySelector("section#projects .swiper-wrapper");
   const projects = await getData("project");
   projects.map((project) => {
-    projectSwiperWrapper.innerHTML += ` <div class="swiper-slide">
+    swiperProjects.appendSlide(` <div class="swiper-slide">
               <a href="${project.url}" target="_blank" class="card__project group relative mx-auto block aspect-video w-full overflow-hidden rounded-lg shadow-md">
                 <img class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" src="${project.img_path}" alt="" />
 
@@ -44,7 +44,7 @@ async function renderCardProjects() {
                   <p class="mt-1 text-sm text-white">${project.description}</p>
                 </div>
               </a>
-            </div>`;
+            </div>`);
   });
   swiperProjects.update();
 }
@@ -133,12 +133,12 @@ const swiperProjects = new Swiper(".swiper--projects", {
       slidesPerView: 2,
       spaceBetween: 32,
     },
+    pagination: {
+      el: ".swiper-pagination",
+    },
   },
 
   // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
 
   // Navigation arrows
   navigation: {

@@ -11,6 +11,10 @@ async function getData(data) {
   return result;
 }
 
+// async function renderSwippers() {
+
+// }
+
 async function renderCardEvents() {
   const eventSwiperWrapper = document.querySelector("section#events .swiper-wrapper");
   const events = await getData("event");
@@ -48,6 +52,9 @@ async function renderCardProjects() {
   });
   swiperProjects.update();
 }
+
+renderCardEvents();
+renderCardProjects();
 
 // Swiper
 const swiperOffer = new Swiper(".swiper--offers", {
@@ -160,7 +167,7 @@ const swiperTestimonials = new Swiper(".swiper--testimonials", {
   },
   breakpoints: {
     1024: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
   },
   spaceBetween: 32,
@@ -176,6 +183,3 @@ const swiperTestimonials = new Swiper(".swiper--testimonials", {
     nextEl: ".swiper--projects #swiper--projects__navigator--next",
   },
 });
-
-renderCardEvents();
-renderCardProjects();

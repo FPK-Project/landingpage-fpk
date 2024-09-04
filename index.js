@@ -32,6 +32,7 @@ async function renderCardEvents() {
   </div>`);
   });
   swiperEvents.update();
+  swiperEvents.loop = true;
 }
 
 async function renderCardProjects() {
@@ -51,6 +52,7 @@ async function renderCardProjects() {
             </div>`);
   });
   swiperProjects.update();
+  swiperProjects.loop = true;
 }
 
 renderCardEvents();
@@ -101,7 +103,7 @@ const swiperMentor = new Swiper(".swiper--mentors", {
 const swiperEvents = new Swiper(".swiper--events", {
   // Optional parameters
   direction: "horizontal",
-  loop: true,
+  // loop: true,
   autoplay: {
     delay: 3000,
   },
@@ -128,7 +130,7 @@ const swiperEvents = new Swiper(".swiper--events", {
 const swiperProjects = new Swiper(".swiper--projects", {
   // Optional parameters
   direction: "horizontal",
-  loop: true,
+  // loop: true,
   autoplay: {
     delay: 3000,
   },

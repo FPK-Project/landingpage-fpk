@@ -11,15 +11,11 @@ async function getData(data) {
   return result;
 }
 
-// async function renderSwippers() {
-
-// }
-
-async function renderCardEvents() {
+async function addCardEvents() {
   const eventSwiperWrapper = document.querySelector("section#events .swiper-wrapper");
   const events = await getData("event");
   events.map((event) => {
-    swiperEvents.appendSlide(`<div class="swiper-slide ">
+    eventSwiperWrapper.innerHTML += `<div class="swiper-slide ">
   <a href="" class="card__event group relative mx-auto block aspect-[2/3] w-[256px] overflow-hidden rounded-lg shadow-xl xl:w-[300px]">
     <img class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" src="${event.img_path}" alt="" />
 
@@ -29,17 +25,15 @@ async function renderCardEvents() {
       <p class="mt-1 text-sm text-white">${event.description}</p>
     </div>
   </a>
-  </div>`);
+  </div>`;
   });
-  swiperEvents.update();
-  swiperEvents.loop = true;
 }
 
-async function renderCardProjects() {
+async function addCardProjects() {
   const projectSwiperWrapper = document.querySelector("section#projects .swiper-wrapper");
   const projects = await getData("project");
   projects.map((project) => {
-    swiperProjects.appendSlide(` <div class="swiper-slide">
+    projectSwiperWrapper.innerHTML += ` <div class="swiper-slide">
               <a href="${project.url}" target="_blank" class="card__project group relative mx-auto block aspect-video w-full overflow-hidden rounded-lg shadow-md">
                 <img class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" src="${project.img_path}" alt="" />
 
@@ -49,16 +43,11 @@ async function renderCardProjects() {
                   <p class="mt-1 text-sm text-white">${project.description}</p>
                 </div>
               </a>
-            </div>`);
+            </div>`;
   });
-  swiperProjects.update();
-  swiperProjects.loop = true;
 }
 
-renderCardEvents();
-renderCardProjects();
-
-// Swiper
+// Swiper Initializations
 const swiperOffer = new Swiper(".swiper--offers", {
   // Optional parameters
   direction: "horizontal",
@@ -100,64 +89,6 @@ const swiperMentor = new Swiper(".swiper--mentors", {
   },
 });
 
-const swiperEvents = new Swiper(".swiper--events", {
-  // Optional parameters
-  direction: "horizontal",
-  // loop: true,
-  autoplay: {
-    delay: 3000,
-  },
-
-  slidesPerView: 1,
-  breakpoints: {
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
-  navigation: {
-    prevEl: ".swiper--events #swiper--events__navigator--prev",
-    nextEl: ".swiper--events #swiper--events__navigator--next",
-  },
-});
-
-const swiperProjects = new Swiper(".swiper--projects", {
-  // Optional parameters
-  direction: "horizontal",
-  // loop: true,
-  autoplay: {
-    delay: 3000,
-  },
-
-  slidesPerView: 1,
-  spaceBetween: 16,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 32,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  },
-
-  // If we need pagination
-
-  // Navigation arrows
-  navigation: {
-    prevEl: ".swiper--projects #swiper--projects__navigator--prev",
-    nextEl: ".swiper--projects #swiper--projects__navigator--next",
-  },
-
-  // And if we need scrollbar
-});
-
 const swiperTestimonials = new Swiper(".swiper--testimonials", {
   // Optional parameters
   direction: "horizontal",
@@ -185,3 +116,65 @@ const swiperTestimonials = new Swiper(".swiper--testimonials", {
     nextEl: ".swiper--projects #swiper--projects__navigator--next",
   },
 });
+
+async function renderSwippers() {
+  await addCardEvents();
+  const swiperEvents = new Swiper(".swiper--events", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+
+    slidesPerView: 1,
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      prevEl: ".swiper--events #swiper--events__navigator--prev",
+      nextEl: ".swiper--events #swiper--events__navigator--next",
+    },
+  });
+  await addCardProjects();
+  const swiperProjects = new Swiper(".swiper--projects", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+
+    slidesPerView: 1,
+    spaceBetween: 16,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 32,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    },
+
+    // If we need pagination
+
+    // Navigation arrows
+    navigation: {
+      prevEl: ".swiper--projects #swiper--projects__navigator--prev",
+      nextEl: ".swiper--projects #swiper--projects__navigator--next",
+    },
+
+    // And if we need scrollbar
+  });
+}
+renderSwippers();

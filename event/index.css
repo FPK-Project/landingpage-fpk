@@ -1,0 +1,5 @@
+/* Hero */
+section#hero .jumbotron {
+  background-image: linear-gradient(to right, #ff7e3e, #f49d03);
+}
+/* _Hero */

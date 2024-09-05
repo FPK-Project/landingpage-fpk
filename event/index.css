@@ -3,3 +3,26 @@ section#hero .jumbotron {
   background-image: linear-gradient(to right, #ff7e3e, #f49d03);
 }
 /* _Hero */
+
+/* Footer */
+section#footer footer {
+  background-image: url("../assets/img/footer-bg.png");
+  background-size: cover;
+  position: relative;
+}
+/* _Footer */
+
+@media screen and (min-width: 1280px) {
+  /* Event */
+  /* section#event .event-heading {
+    position: relative;
+  }
+
+  section#event .event-heading::before {
+    position: absolute;
+    display: block;
+    content: url("../assets/img/svg/event-decor-3.svg");
+    left: -32px;
+  } */
+  /* _Event */
+}

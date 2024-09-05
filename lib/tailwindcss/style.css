@@ -721,6 +721,10 @@ video {
   margin-right: auto;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -1038,6 +1042,10 @@ video {
   gap: 0.25rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1304,6 +1312,10 @@ video {
 
 .pb-16 {
   padding-bottom: 4rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .pb-6 {
@@ -1575,7 +1587,7 @@ video {
 
   nav.active {
     /* height: calc(contentHeight + navbarHeight + padding); */
-    height: calc(312px + 56px);
+    height: calc(256px + 56px);
     background-color: white;
     transition: height 350ms;
     --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -1929,6 +1941,10 @@ video {
 
   .lg\:h-\[300px\] {
     height: 300px;
+  }
+
+  .lg\:w-36 {
+    width: 9rem;
   }
 
   .lg\:w-9 {

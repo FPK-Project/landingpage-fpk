@@ -8,6 +8,11 @@
 /* _Programs */
 
 /* Offers */
+section#offers .swiper-pagination {
+  position: relative;
+  margin-top: 4px;
+}
+
 section#offers .swiper-pagination .swiper-pagination-bullet {
   background-color: #d9d9d9;
   opacity: 1;

@@ -13,10 +13,15 @@ section#hero .jumbotron::before {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 50%);
 }
 
+section#project .project-tabs button {
+  transition: all 200ms;
+}
+
 section#project .project-tabs button.active {
   border: 1px solid #ff7e3e;
   background-color: #ff7e3e;
   color: white;
+  transition: all 200ms;
 }
 
 /* Footer */

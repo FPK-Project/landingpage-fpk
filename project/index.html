@@ -22,6 +22,7 @@
   <body class="">
     <!-- Section Hero -->
     <section id="hero">
+      <!-- Navbar -->
       <nav class="fixed left-0 top-0 z-[9999] w-full overflow-hidden shadow-sm backdrop-blur-md">
         <div class="container mx-auto flex h-14 items-center justify-between px-4 md:px-8 lg:h-16 xl:px-16">
           <a class="flex items-center gap-2" href="">
@@ -46,10 +47,11 @@
             <li><a href="/project/" class="block text-lg font-bold text-[#F49D03] lg:text-base">Project</a></li>
             <li><a href="/event/" class="block text-lg font-medium text-black/60 transition duration-100 hover:text-black lg:text-base">Event</a></li>
 
-            <button class="relative ml-auto flex h-[48px] w-full items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-[#F49D03] to-[#FF7E3E] font-bold text-white shadow-md transition-all duration-300 after:absolute after:inset-0 after:block after:bg-[#FF7E3E] after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100 active:scale-95 lg:mt-0 lg:h-11 lg:w-36" onclick="window.location.href='/login'"><span class="absolute z-10 block">Contact Us</span></button>
+            <button class="relative ml-auto flex h-[48px] w-full items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-[#F49D03] to-[#FF7E3E] font-bold text-white shadow-md transition-all duration-300 after:absolute after:inset-0 after:block after:bg-[#FF7E3E] after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100 active:scale-95 lg:mt-0 lg:h-11 lg:w-36" onclick="window.location.href='/contact'"><span class="absolute z-10 block">Contact Us</span></button>
           </ul>
         </div>
       </nav>
+      <!-- _Navbar -->
 
       <!-- Jumbotron -->
       <div class="jumbotron relative mt-14 h-[350px] lg:mt-16">
@@ -68,31 +70,12 @@
     <section id="project">
       <div class="container mx-auto mt-9 px-4 md:px-8 xl:px-16">
         <div class="project-tabs flex gap-3">
-          <button data-category="all" class="active rounded-full border border-black px-3 py-1 text-sm font-medium transition-all duration-200 md:text-base">All</button>
-          <button data-category="web" class="rounded-full border border-black px-3 py-1 text-sm font-medium transition-all duration-200 md:text-base">Web Developer</button>
-          <button data-category="ui/ux" class="rounded-full border border-black px-3 py-1 text-sm font-medium transition-all duration-200 md:text-base">UI/UX Design</button>
+          <button data-category="all" class="active rounded-full border border-black px-3 py-1 text-sm font-medium md:text-base">All</button>
+          <button data-category="web" class="rounded-full border border-black px-3 py-1 text-sm font-medium md:text-base">Web Developer</button>
+          <button data-category="ui/ux" class="rounded-full border border-black px-3 py-1 text-sm font-medium md:text-base">UI/UX Design</button>
         </div>
 
-        <div class="project-container mt-4 flex flex-wrap justify-between gap-y-8">
-          <!-- <div class="card group overflow-hidden rounded-lg bg-white shadow md:max-w-[340px] lg:max-w-[450px] xl:max-w-[550px]">
-            <div class="aspect-video w-full overflow-hidden shadow-sm">
-              <img class="h-full w-full transition-transform duration-300 hover:transition-transform hover:duration-300 group-hover:scale-110" src="../assets/img/projects/project-6.png" alt="" />
-            </div>
-            <div class="project-detail bg-white px-2.5 pb-2.5 pt-2 lg:px-4 lg:py-4">
-              <h1 class="text-xl font-bold">Landing Page FPK</h1>
-              <p class="text-black/70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eaque corporis rerum neque earum error officia illo reprehenderit qui voluptatem.</p>
-            </div>
-          </div>
-          <div class="card group overflow-hidden rounded-lg bg-white shadow md:max-w-[340px] lg:max-w-[450px] xl:max-w-[550px]">
-            <div class="aspect-video w-full overflow-hidden shadow-sm">
-              <img class="h-full w-full transition-transform duration-300 hover:transition-transform hover:duration-300 group-hover:scale-110" src="../assets/img/projects/project-1.png" alt="" />
-            </div>
-            <div class="project-detail bg-white px-2.5 pb-2.5 pt-2 lg:px-4 lg:py-4">
-              <h1 class="text-xl font-bold">Landing Page FPK</h1>
-              <p class="text-black/70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eaque corporis rerum neque earum error officia illo reprehenderit qui voluptatem.</p>
-            </div>
-          </div> -->
-        </div>
+        <div class="project-container mt-4 flex min-h-screen flex-wrap justify-between gap-y-8"></div>
       </div>
     </section>
     <!-- _Section Event -->

@@ -845,10 +845,6 @@ video {
   height: 1.25rem;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .h-7 {
   height: 1.75rem;
 }
@@ -877,10 +873,6 @@ video {
   height: 300px;
 }
 
-.h-\[340px\] {
-  height: 340px;
-}
-
 .h-\[350px\] {
   height: 350px;
 }
@@ -907,6 +899,10 @@ video {
 
 .min-h-24 {
   min-height: 6rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-10 {
@@ -2263,16 +2259,16 @@ video {
     margin-top: 1.5rem;
   }
 
+  .xl\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .xl\:block {
     display: block;
   }
 
   .xl\:h-10 {
     height: 2.5rem;
-  }
-
-  .xl\:h-\[350px\] {
-    height: 350px;
   }
 
   .xl\:w-24 {

@@ -1,35 +1,41 @@
 [
   {
+    "id": 1,
     "type": "Front End Developer",
     "img_path": "assets/img/events/event-1.png",
     "title": "Workshop Front End Developer",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
   },
   {
+    "id": 2,
     "type": "Front End Developer",
     "img_path": "assets/img/events/event-2.png",
     "title": "Workshop Front End Developer",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
   },
   {
+    "id": 3,
     "type": "Front End Developer",
     "img_path": "assets/img/events/event-3.png",
     "title": "Workshop Front End Developer",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
   },
   {
+    "id": 4,
     "type": "Front End Developer",
     "img_path": "assets/img/events/event-1.png",
     "title": "Workshop Front End Developer",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
   },
   {
+    "id": 5,
     "type": "Front End Developer",
     "img_path": "assets/img/events/event-2.png",
     "title": "Workshop Front End Developer",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
   },
   {
+    "id": 6,
     "type": "Front End Developer",
     "img_path": "assets/img/events/event-3.png",
     "title": "Workshop Front End Developer",

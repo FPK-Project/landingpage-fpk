@@ -51,7 +51,7 @@ async function showAllProject() {
             <div class="aspect-video w-full overflow-hidden shadow-sm">
               <img class="h-full w-full transition-transform duration-300 hover:transition-transform hover:duration-300 group-hover:scale-110" src="../${card.img_path}" alt="" />
             </div>
-            <div class="project-detail bg-white px-2.5 pb-2.5 pt-2 lg:px-4 lg:py-4">
+            <div class="project-detail border-t border-gray-600/10 bg-white px-2.5 pb-2.5 pt-2 lg:px-4 lg:py-4">
               <h1 class="text-xl font-bold">${card.title}</h1>
               <p class="text-black/70">${card.description}</p>
             </div>

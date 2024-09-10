@@ -19,6 +19,10 @@ section#hero main::after {
 }
 /* Hero */
 
+section#mentor {
+  background-image: linear-gradient(170deg, #ff7e3e 17%, #f49d03 100%);
+}
+
 /* Footer */
 section#footer footer {
   background-image: url("../assets/img/footer-bg.png");

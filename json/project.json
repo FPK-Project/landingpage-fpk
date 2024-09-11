@@ -4,15 +4,15 @@
     "category": "web",
     "type": "Front End Developer",
     "img_path": "assets/img/projects/project-1.png",
-    "title": "Workshop Front End Developer",
+    "title": "Akademi Anti Joki",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
   },
   {
     "url": "https://online-learning-landing-page-abdi.vercel.app/",
-    "category": "ui/ux",
+    "category": "web",
     "type": "Front End Developer",
     "img_path": "assets/img/projects/project-2.png",
-    "title": "Workshop Front End Developer",
+    "title": "Online Learning Platform Landing Page",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
   },
   {
@@ -20,15 +20,15 @@
     "category": "web",
     "type": "Front End Developer",
     "img_path": "assets/img/projects/project-3.png",
-    "title": "Workshop Front End Developer",
+    "title": "Travel Agency Landing Page",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
   },
   {
     "url": "https://oatmovie.vercel.app/",
-    "category": "ui/ux",
+    "category": "web",
     "type": "Front End Developer",
     "img_path": "assets/img/projects/project-4.png",
-    "title": "Workshop Front End Developer",
+    "title": "Netflix Clone",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
   },
   {
@@ -36,15 +36,15 @@
     "category": "web",
     "type": "Front End Developer",
     "img_path": "assets/img/projects/project-5.png",
-    "title": "Workshop Front End Developer",
+    "title": "Design Agency Landing Page",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
   },
   {
-    "url": "https://fpk.com/",
+    "url": "https://forumprogrammerkaputama.vercel.app/",
     "category": "ui/ux",
-    "type": "Front End Developer",
+    "type": "UI/UX Designer",
     "img_path": "assets/img/projects/project-6.png",
-    "title": "Workshop Front End Developer",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
+    "title": "Landing Page Forum Programmer Kaputama",
+    "description": "Design UI/UX untuk website landing page Forum Programmer Kaputama"
   }
 ]

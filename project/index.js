@@ -47,7 +47,7 @@ async function showAllProject() {
   const data = await getAllProjects();
   const projectContainer = document.querySelector("section#project .project-container");
   data.map((card) => {
-    projectContainer.innerHTML += `<div class="card group overflow-hidden rounded-lg bg-white shadow md:max-w-[340px] lg:max-w-[450px] xl:max-w-[550px]">
+    projectContainer.innerHTML += `<a href="${card.url}" target="_blank" class="card group overflow-hidden rounded-lg bg-white shadow md:max-w-[340px] lg:max-w-[450px] xl:max-w-[550px]">
             <div class="aspect-video w-full overflow-hidden shadow-sm">
               <img class="h-full w-full transition-transform duration-300 hover:transition-transform hover:duration-300 group-hover:scale-110" src="../${card.img_path}" alt="" />
             </div>
@@ -55,7 +55,7 @@ async function showAllProject() {
               <h1 class="text-xl font-bold">${card.title}</h1>
               <p class="text-black/70">${card.description}</p>
             </div>
-          </div>`;
+          </a>`;
   });
 }
 
@@ -79,7 +79,7 @@ async function showUIUXProject() {
   const data = await getProjectByCategory("ui/ux");
   const projectContainer = document.querySelector("section#project .project-container");
   data.map((card) => {
-    projectContainer.innerHTML += `<div class="card group overflow-hidden rounded-lg bg-white shadow md:max-w-[340px] lg:max-w-[450px] xl:max-w-[550px]">
+    projectContainer.innerHTML += `<a href="${card.url}" target="_blank" class="card group overflow-hidden rounded-lg bg-white shadow md:max-w-[340px] lg:max-w-[450px] xl:max-w-[550px]">
             <div class="aspect-video w-full overflow-hidden shadow-sm">
               <img class="h-full w-full transition-transform duration-300 hover:transition-transform hover:duration-300 group-hover:scale-110" src="../${card.img_path}" alt="" />
             </div>
@@ -87,7 +87,7 @@ async function showUIUXProject() {
               <h1 class="text-xl font-bold">${card.title}</h1>
               <p class="text-black/70">${card.description}</p>
             </div>
-          </div>`;
+          </a>`;
   });
 }
 

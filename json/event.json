@@ -40,5 +40,19 @@
     "img_path": "assets/img/events/event-3.webp",
     "title": "Workshop Front End Developer",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, excepturi."
+  },
+  {
+    "id": 7,
+    "type": "Code Camp",
+    "img_path": "assets/img/events/event-4.jpg",
+    "title": "Code Camp Web Developer",
+    "description": "Codecamp Web Developer"
+  },
+  {
+    "id": 7,
+    "type": "Code Camp",
+    "img_path": "assets/img/events/event-5.jpg",
+    "title": "Code Camp UI/UX Designer",
+    "description": "Codecamp UI/UX Designer"
   }
 ]

@@ -905,6 +905,10 @@ video {
   height: 100%;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .min-h-24 {
   min-height: 6rem;
 }

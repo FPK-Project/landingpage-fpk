@@ -13,11 +13,13 @@ async function getData(data) {
 
 async function renderCardEvents() {
   const cardContainer = document.querySelector("section#event .card-event-container");
-  const events = await getData("event");
+  let events = await getData("event");
+  events = events.reverse();
+
   events.map((event) => {
-    cardContainer.innerHTML += `<div class="card md:w-80 lg:w-72 xl:w-[48%]">
+    cardContainer.innerHTML += `<div class="card w-full md:w-80 lg:w-72 xl:w-[48%] ">
             <div class="group overflow-hidden rounded-lg shadow-lg">
-              <img class="h-full w-full object-cover transition-transform duration-300 hover:transition-transform hover:duration-300 group-hover:scale-110" src="../${event.img_path}" alt="" />
+              <img class="h-80 w-full object-cover transition-transform duration-300 hover:transition-transform hover:duration-300 group-hover:scale-110" src="../${event.img_path}" alt="" />
             </div>
             <div class="mt-2 inline-block rounded-lg bg-[rgba(217,217,217,0.3)] p-2">
               <p class="text-sm font-semibold">${event.type}</p>

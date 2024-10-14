@@ -14,7 +14,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   async function addCardEvents() {
     const eventSwiperWrapper = document.querySelector("section#events .swiper-wrapper");
-    const events = await getData("event");
+    let events = await getData("event");
+    events = events.reverse().slice(0, 6);
     events.map((event) => {
       eventSwiperWrapper.innerHTML += `<div class="swiper-slide ">
   <a href="" class="card__event group relative mx-auto block aspect-[2/3] w-[256px] overflow-hidden rounded-lg shadow-xl xl:w-[300px]">
@@ -32,7 +33,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   async function addCardProjects() {
     const projectSwiperWrapper = document.querySelector("section#projects .swiper-wrapper");
-    const projects = await getData("project");
+    let projects = await getData("project");
+    projects = projects.reverse().slice(0, 6);
+
     projects.map((project) => {
       projectSwiperWrapper.innerHTML += ` <div class="swiper-slide">
               <a href="${project.url}" target="_blank" class="card__project group relative mx-auto block aspect-video w-full overflow-hidden rounded-lg shadow-md">
